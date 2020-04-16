@@ -1,0 +1,77 @@
+selectoptions=[
+    {
+        "voption": "clabels",
+        "clabel": "VM_MULTIVARIANT_FIELD_LABEL1",
+        "values": "T85\rnT90\\r\nT95\r\nT100"
+    },
+    {
+        "voption": "clabels",
+        "clabel": "VM_MULTIVARIANT_FIELD_LABEL2",
+        "values": "HUESO\r\nNEGRO\r\nBORDO\r\nMILITAR"
+    }
+]|options={
+    "1598": [
+        "T85",
+        "HUESO"
+    ],
+    "11401": [
+        "T85",
+        "NEGRO"
+    ],
+    "11402": [
+        "T85",
+        "BORDO"
+    ],
+    "11403": [
+        "T85",
+        "MILITAR"
+    ],
+    "11404": [
+        "T90",
+        "HUESO"
+    ],
+    "11405": [
+        "T90",
+        "NEGRO"
+    ],
+    "11406": [
+        "T90",
+        "BORDO"
+    ],
+    "11407": [
+        "T90",
+        "MILITAR"
+    ],
+    "11408": [
+        "T95",
+        "HUESO"
+    ],
+    "11409": [
+        "T95",
+        "NEGRO"
+    ],
+    "11410": [
+        "T95",
+        "BORDO"
+    ],
+    "11411": [
+        "T95",
+        "MILITAR"
+    ],
+    "11412": [
+        "T100",
+        "HUESO"
+    ],
+    "11413": [
+        "T100",
+        "NEGRO"
+    ],
+    "11414": [
+        "T100",
+        "BORDO"
+    ],
+    "11415": [
+        "T100",
+        "MILITAR"
+    ]
+}|

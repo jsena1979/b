@@ -1,0 +1,102 @@
+{
+   "Date":"2019-12-12 21:31:13",
+   "Total":"2198.50000",
+   "TotalDiscount":"0.00",
+   "PaidTotal":"2198.50000",
+   "FinancialSurcharge":0,
+   "OrderID":4047,
+   "OrderNumber":"KN1A04033",
+   "Customer":{
+      "CustomerID":2422,
+      "Code":"",
+      "DocumentType":"96",
+      "DocumentNumber":"27366462",
+      "IVACategoryCode":"CF",
+      "User":"enriques",
+      "Email":"enriqueseine@hotmail.com",
+      "FirstName":"Enrique José",
+      "LastName":"Seine",
+      "BusinessName":null,
+      "Street":"Olas del Mar 1256 ",
+      "HouseNumber":"",
+      "Floor":"",
+      "Apartment":null,
+      "City":"Posadas",
+      "ProvinceCode":"19",
+      "PostalCode":"3300",
+      "PhoneNumber1":"3764444587",
+      "PhoneNumber2":"3764545454",
+      "Bonus":0,
+      "MobilePhoneNumber":null,
+      "WebPage":null,
+      "BusinessAddress":null,
+      "Comments":"",
+      "NumberListPrice":1,
+      "Removed":false,
+      "DateUpdate":"2019-12-12 21:29:03",
+      "Disable":"0001-01-01T00:00:00"
+   },
+   "CancelOrder":false,
+   "OrderItems":[
+      {
+         "ProductCode":2603,
+         "SKUCode":"0101000090",
+         "VariantCode":null,
+         "Description":"3790B PRUEBA MASIVA",
+         "VariantDescription":null,
+         "Quantity":"2",
+         "UnitPrice":"461.90000",
+         "DiscountPercentage":"0.00000"
+      },
+      {
+         "ProductCode":2599,
+         "SKUCode":"0101004500",
+         "VariantCode":null,
+         "Description":"6550B",
+         "VariantDescription":null,
+         "Quantity":"3",
+         "UnitPrice":"424.90000",
+         "DiscountPercentage":"0.00000"
+      }
+   ],
+   "Shipping":{
+      "ShippingID":4159,
+      "Street":"Olas del Mar 1256",
+      "HouseNumber":null,
+      "Floor":null,
+      "Apartment":null,
+      "City":"Posadas",
+      "ProvinceCode":"19",
+      "PostalCode":"3300",
+      "PhoneNumber1":"3764444587",
+      "PhoneNumber2":null,
+      "ShippingCost":0,
+	  "DeliversMonday": "N",
+	  "DeliversTuesday": "N",
+	  "DeliversWednesday": "S",
+	  "DeliversThursday": "N",
+	  "DeliversFriday": "S",
+	  "DeliversSaturday": "N",
+	  "DeliversSunday": "N"
+   },
+   "CashPayment":{
+      "PaymentID":1,
+      "PaymentMethod":"A01",
+      "PaymentTotal":"2198.0000"
+   },
+   "Payments":[
+      {
+         "PaymentId":2,
+         "TransactionDate":"2019-12-12 21:31:13",
+         "AuthorizationCode":0,
+         "TransactionNumber":0,
+         "Installments":1,
+         "InstallmentAmount":"0.50000",
+         "Total":"0.50000",
+         "CardCode":000,
+         "CardPlanCode":"1",
+         "VoucherNo":0,
+         "CardPromotionCode":null
+      }
+   ]
+}
