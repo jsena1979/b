@@ -1,12 +1,12 @@
 #BAKHOU
 #update ernes_articulos_tango set Description = replace(Description,'  ',' ');
 update ernes_articulos_tango 
-set marca='LARA TEENS',
+set marca='MELIFERA',
     codigo=trim(split(Description,' ',1)),
     talle=(CASE WHEN trim(split(Description,' ',2)) <> '' then trim(split(Description,' ',2)) else 'UNICO' END),
     color=(CASE WHEN trim(split(Description,' ',3)) <> '' then trim(split(Description,' ',3)) else 'VARIOS' END)
-where Description  REGEXP '^[0-9]+L '
-and AdditionalDescription !='BEBES' ;
+where Description  REGEXP '^[0-9]+M '
+#and AdditionalDescription !='BEBES' ;
 
 select * from (select
 	marca,
@@ -26,8 +26,8 @@ select * from (select
         END) as peso
     from ernes_articulos_tango       
 	where 
-    #Description  REGEXP '^[0-9]+L '
-	ssmarca='LARA TEENS'
+    #Description  REGEXP '^[0-9]+M '
+	marca='MELIFERA'
     ) as L
     order by codigo,peso
     
@@ -42,7 +42,7 @@ select
     AdditionalDescription,BarCode
     from ernes_articulos_tango
 where 
-Description  REGEXP '^[0-9]+L '
-and AdditionalDescription !='BEBES' ;
+Description  REGEXP '^[0-9]+M '
+and AdditionalDescription !='CONJUNTO' ;
 
 
