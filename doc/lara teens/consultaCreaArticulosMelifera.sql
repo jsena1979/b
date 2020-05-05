@@ -10,7 +10,7 @@ concat(marca,'-Art ',codigo,'-',SKUCode) as slug,
  'VM_MULTIVARIANT_FIELD_LABEL1~Color' as multi_variant_fields,
  '1.0' as product_price,Disabled,
  (case when (Disabled = '0') then 'Y' else 'N' end) as published,
- 'Lenceria de Hombre/Bakhou' as category_path ,
+ 'Lenceria de Mujer/Melifera' as category_path ,
  concat(concat(AdditionalDescription,' ',marca,'-Art:',codigo),'<br />',talle,' - ',color) as product_desc,
    (CASE 
 		WHEN trim(talle)='T80' then 1
