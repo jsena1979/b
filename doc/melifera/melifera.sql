@@ -1,11 +1,17 @@
-#BAKHOU
+delete from 
+ljul_virtuemart_product_customfields 
+where 
+virtuemart_custom_id = '10' OR virtuemart_custom_id='11';
+#MELIFERA
 #update ernes_articulos_tango set Description = replace(Description,'  ',' ');
 update ernes_articulos_tango 
 set marca='MELIFERA',
     codigo=trim(split(Description,' ',1)),
     talle=(CASE WHEN trim(split(Description,' ',2)) <> '' then trim(split(Description,' ',2)) else 'UNICO' END),
     color=(CASE WHEN trim(split(Description,' ',3)) <> '' then trim(split(Description,' ',3)) else 'VARIOS' END)
-where Description  REGEXP '^[0-9]+M '
+where 
+#Description  REGEXP '^[0-9]+M ' OR
+Description  REGEXP '^[0-9]+/1M '
 #and AdditionalDescription !='BEBES' ;
 
 select * from (select
@@ -42,7 +48,7 @@ select
     AdditionalDescription,BarCode
     from ernes_articulos_tango
 where 
-Description  REGEXP '^[0-9]+M '
+Description  REGEXP '^[0-9]+/1M '
 and AdditionalDescription !='CONJUNTO' ;
 
 

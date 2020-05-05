@@ -1,6 +1,5 @@
 
 select 
-(select virtuemart_product_id from ernes_virtuemart_products where trim(product_sku)=trim(t.codigo)) as product_parent_id,
 concat(marca,'-Art:',codigo) as product_name, 
 SKUCode as product_sku,
 '' as product_parent_sku,
@@ -25,7 +24,7 @@ concat(marca,'-Art ',codigo,'-',SKUCode) as slug,
         WHEN trim(talle)='T120' or trim(talle)='T8' or trim(talle)='T.120'then 9
        ELSE 6
         END) as peso
-from ernes_articulos_tango t where marca ='MELIFERA'
+from ernes_articulos_tango t where marca ='MELIFERA' and codigo REGEXP '^[0-9]+/1M'
 order by codigo, peso,color;
 
 
