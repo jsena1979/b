@@ -11,7 +11,7 @@ replace(concat(marca,'-Art-',codigo,'-',SKUCode),'/','-') as slug,
  'VM_MULTIVARIANT_FIELD_LABEL1~Color' as multi_variant_fields,
  '1.0' as product_price,
  'Y' as published,
- 'Lenceria de Hombre/XY' as category_path ,
+ 'Lenceria de Hombre/ACROBATA' as category_path ,
  concat(concat(AdditionalDescription,' ',marca,'-Art:',codigo),'<br />',coalesce(vm_description(0,codigo),concat(talle,' - ',color))) as product_desc,
    (CASE 
 		WHEN trim(talle)='T85' or trim(talle)='85' or trim(talle)='T1' or trim(talle)='T.85' or  trim(talle)='TS' or  trim(talle)='S' or  trim(talle)='T.S' then 2
@@ -35,7 +35,7 @@ replace(concat(marca,'-Art-',codigo,'-',SKUCode),'/','-') as slug,
 		WHEN trim(talle)='58' or trim(talle)='T58' or trim(talle)='T.58'then 58
        ELSE 6
         END) as peso
-from ljul_articulos_tango_exp t where marca ='XY'
+from ljul_articulos_tango_exp t where marca ='ACROBATA'
 order by codigo, peso,color;
 
 

@@ -21,4 +21,5 @@ select
     from ljul_articulos_tango_exp
 where 
 marca='ACROBATA'
-select *  from ljul_articulos_tango_exp where marca='ACROBATA';
+select distinct(talle)  from ljul_articulos_tango_exp where marca='ACROBATA';
+update ljul_articulos_tango_exp set marca='ACROBATA' where marca is null
