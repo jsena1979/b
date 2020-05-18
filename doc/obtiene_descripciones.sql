@@ -1,9 +1,10 @@
 DROP FUNCTION IF EXISTS `vm_description`;
+SET GLOBAL log_bin_trust_function_creators = 1;
 DELIMITER $$
 CREATE FUNCTION vm_description ( id_vm INT,sku varchar(150) )
-RETURNS varchar (500)
+RETURNS varchar (800)
 BEGIN
-   DECLARE descrip_art varchar(500);
+   DECLARE descrip_art varchar(800);
    set descrip_art = 	(select 
 		d.product_desc 
     from
@@ -15,5 +16,3 @@ BEGIN
     and p.product_parent_id=0);
    return  descrip_art;
 END;
-
-select vm_description(0,'1001T');

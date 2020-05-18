@@ -33,7 +33,7 @@ replace(concat(marca,'-Art-',codigo,'-',SKUCode),'/','-') as slug,
 		WHEN trim(talle)='54' or trim(talle)='T54' or trim(talle)='T.54'then 54
 		WHEN trim(talle)='56' or trim(talle)='T56' or trim(talle)='T.56'then 56
 		WHEN trim(talle)='58' or trim(talle)='T58' or trim(talle)='T.58'then 58
-       ELSE 6
+       ELSE 1000
         END) as peso
 from ljul_articulos_tango_exp t where marca ='XY'
 order by codigo, peso,color;
