@@ -10,7 +10,8 @@ set marca='ACROBATA',
     talle=(CASE WHEN trim(split(Description,' ',2)) <> '' then trim(split(Description,' ',2)) else 'UNICO' END),
     color=(CASE WHEN trim(split(Description,' ',3)) <> '' then trim(split(Description,' ',3)) else 'VARIOS' END)
 where 
-marca='ACROBATA';
+marca='ACROBATA'
+AND Description like '5015BR%';
     
 select
 	trim(split(Description,' ',1)) as codigo,
