@@ -11,6 +11,7 @@ set codigo=trim(split(Description,' ',1)),
 where 
 marca='BIANCA';
 
-select distinct(talle) from ljul_articulos_tango_exp 
+select *
+ from ljul_articulos_tango_exp 
 where marca='BIANCA'
 order by talle
