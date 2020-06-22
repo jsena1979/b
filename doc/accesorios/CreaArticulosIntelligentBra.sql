@@ -11,7 +11,7 @@ replace(concat(marca,'-Art-',codigo,'-',SKUCode),'/','-') as slug,
  'VM_MULTIVARIANT_FIELD_LABEL1~Color' as multi_variant_fields,
  '1.0' as product_price,
  'Y' as published,
- 'Lenceria de Mujer/Limitless' as category_path ,
+ 'Lenceria de Mujer/INTELLIGENTBRA' as category_path ,
  concat(concat(AdditionalDescription,' ',marca,'-Art:',codigo),'<br />',coalesce(vm_description(0,codigo),concat(talle,' - ',color))) as product_desc,Description,
    (CASE 
 		WHEN trim(talle)='70' or trim(talle)='T70' or trim(talle)='T.70'then 1
@@ -48,7 +48,7 @@ replace(concat(marca,'-Art-',codigo,'-',SKUCode),'/','-') as slug,
         WHEN trim(talle)='TXXXL' or  trim(talle)='XXXL' or  trim(talle)='T.XXXL' then 125
        ELSE 1000
         END) as peso, Description
-from ljul_articulos_tango_exp t where marca ='LIMITLESS'
+from ljul_articulos_tango_exp t where marca ='INTELLIGENTBRA'
 order by codigo, peso,color;
 
 
