@@ -15,6 +15,6 @@
 				cp.virtuemart_category_id= cn.virtuemart_category_id
                 and cc.id=cn.virtuemart_category_id    
 				and cp.virtuemart_product_id=p.virtuemart_product_id
-				and cn.category_name ='BIANCA SECRETA'
-				and cp.virtuemart_category_id='19'
+				#and cn.category_name ='BIANCA SECRETA'
+				and cp.virtuemart_category_id='21'
                 and cc.category_parent_id='1' 
