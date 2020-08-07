@@ -3,13 +3,13 @@ ljul_virtuemart_product_customfields
 where 
 virtuemart_custom_id = '10' OR virtuemart_custom_id='11';
 
-update ljul_articulos_tango_exp set Description = replace(Description,'  ',' ') where marca='palette';
+update ljul_articulos_tango_exp set Description = replace(Description,'  ',' ') where marca='arcoiris';
 update ljul_articulos_tango_exp 
 set codigo=trim(split(Description,' ',1)),
     talle=(CASE WHEN trim(split(Description,' ',2)) <> '' then trim(split(Description,' ',2)) else 'UNICO' END),
     color=(CASE WHEN trim(split(Description,' ',3)) <> '' then trim(split(Description,' ',3)) else 'VARIOS' END)
 where 
-marca='palette';
+marca='arcoiris';
     
 select
 	trim(split(Description,' ',1)) as codigo,
@@ -19,9 +19,9 @@ select
     AdditionalDescription,BarCode
     from ljul_articulos_tango_exp
 where 
-marca='palette'
+marca='arcoiris'
 
 select distinct(talle) from ljul_articulos_tango_exp 
-where marca='palette'
+where marca='arcoiris'
 
 order by talle
