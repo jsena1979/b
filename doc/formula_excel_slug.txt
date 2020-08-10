@@ -1,1 +1,0 @@
-=MINUSC(SUSTITUIR(SUSTITUIR(SUSTITUIR(SUSTITUIR(B2&"-"&C2;" ";"-");".";"");"/";"-");":";"-"))
