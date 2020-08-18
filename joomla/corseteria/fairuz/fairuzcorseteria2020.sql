@@ -12,15 +12,7 @@ set codigo=trim(split(Description,' ',1)),
 where 
 marca='fairuz';
     
-select
-	trim(split(Description,' ',1)) as codigo,
-	(CASE WHEN trim(split(Description,' ',2)) != '' then trim(split(Description,' ',2)) else 'UNICO' END) as talle,
-	(CASE WHEN trim(split(Description,' ',3)) != '' then trim(split(Description,' ',3)) else 'VARIOS' END) as color,
-    Description,
-    AdditionalDescription,BarCode
-    from ljul_articulos_tango_exp
-where 
-marca='FAIRUZ'
+
 
 select distinct(talle) from ljul_articulos_tango_exp 
 where marca='FAIRUZ'

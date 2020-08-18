@@ -48,7 +48,7 @@ replace(concat(marca,'-Art-',codigo,'-',SKUCode),'/','-') as slug,
         WHEN trim(talle)='TXXXL' or  trim(talle)='XXXL' or  trim(talle)='T.XXXL' then 125
        ELSE 1000
         END) as peso, Description
-from ljul_articulos_tango_exp t where marca ='FAIRUZ'
+from ljul_articulos_tango_exp t where marca ='fairuz'
 order by codigo, peso,color;
 
 
